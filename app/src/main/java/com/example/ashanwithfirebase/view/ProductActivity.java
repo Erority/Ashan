@@ -20,6 +20,7 @@ public class ProductActivity extends AppCompatActivity {
 
         binding = ActivityProductBinding.inflate(getLayoutInflater());
 
+        //Получает переданные данные в getIntent
         String json = getIntent().getStringExtra("Product");
         Gson gson = new Gson();
 
@@ -30,6 +31,7 @@ public class ProductActivity extends AppCompatActivity {
 
     }
 
+    //Устанавливаем данные ко view
     private void setUI(Product product){
 
         Picasso.get()

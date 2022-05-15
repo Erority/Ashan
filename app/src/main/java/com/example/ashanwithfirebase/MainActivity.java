@@ -17,6 +17,8 @@ import com.google.gson.Gson;
 
 import java.util.List;
 
+
+//Этот класс имплементирует AdapterItemCLickListener для того, чтобы можно было отследить нажатие на элемент RecyclerView
 public class MainActivity extends AppCompatActivity implements AdapterItemClickListener{
 
     private MainActivityViewModel viewModel;
